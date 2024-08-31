@@ -9,6 +9,11 @@
 
 	$db = pg_connect("$host $port $dbname $user $password");
 
+	if (!$db) {
+        echo "Error: No se pudo conectar a la base de datos.";
+        exit;
+    }
+
 	return $db;
 }
 ?>
