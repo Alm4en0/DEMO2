@@ -75,7 +75,7 @@
 <body>
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.php">
             <img src="index2.png" alt="Index Logo">
             <span>Index</span>
         </a>
@@ -83,6 +83,13 @@
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link btn btn-info" href="listar_grupoYCG.php">Listar Grupo YCG</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
