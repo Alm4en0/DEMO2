@@ -74,6 +74,16 @@
             text-align: right;
             margin-top: 1rem; 
         }
+        .btn-pink {
+            color: #fff;
+            background-color: #ff69b4; 
+            border-color: #ff69b4; 
+        }
+      
+        .btn-pink:hover {
+            background-color: #ff1493; 
+            border-color: #ff1493; 
+        }
     </style>
 </head>
 
