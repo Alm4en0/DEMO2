@@ -69,6 +69,11 @@
         footer img {
             margin-bottom: 10px;
         }
+
+        .btn-right {
+            text-align: right;
+            margin-top: 1rem; 
+        }
     </style>
 </head>
 
@@ -153,6 +158,9 @@
                 ?>
                         </tbody>
                     </table>
+                </div>
+                <div class="btn-right">
+                    <a href="index.php" class="btn btn-pink">Volver</a>
                 </div>
             </div>
         </div>
