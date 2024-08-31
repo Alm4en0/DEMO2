@@ -86,7 +86,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link btn btn-info" href="listar_grupoYCG.php">Listar Grupo YCG</a>
+                    <a class="nav-link btn " href="listar_grupoYCG.php">Ver Lista</a>
                 </li>
             </ul>
         </div>
