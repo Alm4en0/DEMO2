@@ -97,7 +97,7 @@
 
         if (isset($_GET['error'])) {
             if ($_GET['error'] == 'duplicado') {
-                echo "<div class='alert alert-danger' role='alert'>El documento ya existe. Por favor, registre a otra persona.</div>";
+                echo "<div class='alert alert-danger' role='alert'>El número de documento ya existe. Por favor, registre a otra persona.</div>";
             } elseif ($_GET['error'] == 'insert') {
                 echo "<div class='alert alert-danger' role='alert'>Error al registrar la persona. Inténtelo de nuevo.</div>";
             }
