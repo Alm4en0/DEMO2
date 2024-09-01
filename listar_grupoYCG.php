@@ -12,6 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/28fb062c78.js" crossorigin="anonymous"></script>
 
     <style>
         h1 {
@@ -82,7 +83,8 @@
       
         .btn-pink:hover {
             background-color: #ff1493; 
-            border-color: #ff1493; 
+            border-color: #ff1493;
+            color: #fff; 
         }
     </style>
 </head>
@@ -159,6 +161,12 @@
                     echo "<td>" . $fila['apellido'] . "</td>";
                     echo "<td>" . $fila['direccion'] . "</td>";
                     echo "<td>" . $fila['celular'] . "</td>";
+                    echo "<td>
+                        <a href='eliminar.php?id=" . $fila['documento'] . "' class='text-danger' onclick='return confirm(\"¿Estás seguro de que deseas eliminar este registro?\");'>
+                            <i class='fa-solid fa-trash-can'></i>
+                        </a>
+                    </td>";
+                    echo "</tr>";
                   }
                 } else {
                   echo "<tr><td colspan='6'>Error al ejecutar la consulta SQL: " . pg_last_error($con) . "</td></tr>";
