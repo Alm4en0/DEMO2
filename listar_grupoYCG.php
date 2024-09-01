@@ -90,6 +90,19 @@
 </head>
 
 <body>
+    <?php
+        if (isset($_GET['mensaje']) && $_GET['mensaje'] == 'registrado') {
+            echo "<div class='alert alert-success' role='alert'>Registro exitoso.</div>";
+        }
+
+        if (isset($_GET['error'])) {
+            if ($_GET['error'] == 'duplicado') {
+                echo "<div class='alert alert-danger' role='alert'>El documento ya existe. Por favor, registre a otra persona.</div>";
+            } elseif ($_GET['error'] == 'insert') {
+                echo "<div class='alert alert-danger' role='alert'>Error al registrar la persona. Inténtelo de nuevo.</div>";
+            }
+        }
+    ?>
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="#">
