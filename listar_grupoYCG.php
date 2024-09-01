@@ -162,9 +162,12 @@
                     echo "<td>" . $fila['direccion'] . "</td>";
                     echo "<td>" . $fila['celular'] . "</td>";
                     echo "<td>
-                        <a href='eliminar.php?id=" . $fila['documento'] . "' class='text-danger' onclick='return confirm(\"¿Estás seguro de que deseas eliminar este registro?\");'>
-                            <i class='fa-solid fa-trash-can'></i>
-                        </a>
+                        <form action='eliminar.php' method='POST' onsubmit='return confirm(\"¿Estás seguro de que deseas eliminar este registro?\");'>
+                            <input type='hidden' name='idpersona' value='" . $fila['documento'] . "'>
+                            <button type='submit' class='btn btn-link text-danger'>
+                                <i class='fa-solid fa-trash-can'></i>
+                            </button>
+                        </form>
                     </td>";
                     echo "</tr>";
                   }
