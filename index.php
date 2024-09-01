@@ -73,6 +73,17 @@
 </head>
 
 <body>
+    <?php
+        if (isset($_GET['mensaje'])) {
+            $mensaje = $_GET['mensaje'];
+            if ($mensaje == 'eliminado') {
+                echo "<div class='alert alert-success'>Registro eliminado exitosamente.</div>";
+            } elseif ($mensaje == 'error') {
+                echo "<div class='alert alert-danger'>Hubo un error al eliminar el registro.</div>";
+            }
+    }
+    ?>
+
 
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="index.php">
