@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['idpersona'])) {
     // Verificar si la consulta fue exitosa
     if ($result) {
         // Redirigir a la página principal después de eliminar
-        header("Location: index.php?mensaje=eliminado");
+        header("Location: listar_grupoYCG.php?mensaje=eliminado");
         exit;
     } else {
         // Mostrar mensaje de error si algo salió mal

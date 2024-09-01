@@ -76,9 +76,7 @@
     <?php
         if (isset($_GET['mensaje'])) {
             $mensaje = $_GET['mensaje'];
-            if ($mensaje == 'eliminado') {
-                echo "<div class='alert alert-success'>Registro eliminado exitosamente.</div>";
-            } elseif ($mensaje == 'error') {
+            if ($mensaje == 'error') {
                 echo "<div class='alert alert-danger'>Hubo un error al realizar la operación.</div>";
             } elseif ($mensaje == 'duplicado') {
                 echo "<div class='alert alert-warning'>El número de documento ya está registrado.</div>";

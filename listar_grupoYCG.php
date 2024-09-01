@@ -93,6 +93,8 @@
     <?php
         if (isset($_GET['mensaje']) && $_GET['mensaje'] == 'registrado') {
             echo "<div class='alert alert-success' role='alert'>Registro exitoso.</div>";
+        } elseif (isset($_GET['mensaje']) && $_GET['mensaje'] == 'eliminado') {
+            echo "<div class='alert alert-success' role='alert'>Registro eliminado exitosamente.</div>";
         }
 
         if (isset($_GET['error'])) {
